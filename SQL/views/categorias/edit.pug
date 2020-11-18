@@ -1,0 +1,9 @@
+doctype html
+html
+	head
+		title Tareas
+	body
+		form(action=`/categorias/${category.id}?_method=PUT` method="POST")
+			textarea(name="title" placeholder="Coloca aqui el nuevo titulo")=category.title
+			input(type="color" name="color" value=category.color)
+			input(type="submit" value="Guardar")
